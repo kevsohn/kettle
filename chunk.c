@@ -9,5 +9,5 @@ void initChunk(Chunk* chunk) {
 void writeChunk(Chunk* chunk, uint8_t byte) {
 	if (chunk->count >= chunk->capacity) 
 		chunk = reallocate(&chunk, 2.);
-
+	reallocate();
 }
