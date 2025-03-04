@@ -6,9 +6,9 @@ void *reallocate(void *ptr, size_t oldsize, size_t newsize) {
         free(ptr);
         return NULL;
     }
-    // behaves like malloc if chunk->code = NULL
-    // chunk->code valid if realloc fails
-    void *new_ptr = realloc(ptr, newsize);
+    // behaves like malloc if ptr == NULL
+    // ptr still valid if realloc fails
+    size_t *new_ptr = realloc(ptr, newsize);
     if (new_ptr == NULL) exit(EXIT_FAILURE);
     return new_ptr;
 }

@@ -2,7 +2,7 @@ CC = gcc
 
 SRC = $(wildcard src/*.c)
 OBJ = $(SRC:src/%.c=obj/%.o)
-TARGET = bin/kettle
+TARGET = bin/KVM
 
 all: clean $(TARGET)
 
