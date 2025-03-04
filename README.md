@@ -1,3 +1,3 @@
-The Kettle Language compiles down to bytecode and uses LLVM in the backend to compile to machine code.
+The Kettle Language compiles down to bytecode and a VM written in C executes the operations.
 
-Inpsired by C, Lox, and OCaml.
+Language inpsired by C, Lox, and OCaml.
