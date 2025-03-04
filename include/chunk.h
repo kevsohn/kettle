@@ -1,5 +1,5 @@
-#ifndef chunk.h
-#define chunk.h
+#ifndef CHUNK_H
+#define CHUNK_H
 
 #include "common.h"
 
@@ -8,7 +8,9 @@ typedef enum {
 }OpCode;
 
 typedef struct {
-	uint8_t* code;
+    int count;
+    int capacity;
+	uint8_t *code;
 }Chunk;
 
 void initChunk(Chunk* chunk);
